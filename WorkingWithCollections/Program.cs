@@ -6,6 +6,7 @@ namespace WorkingWithCollections
     {
         static void Main(string[] args)
         {
+            /*
             Car car1 = new Car();
             car1.Make = "oldmobile";
             car1.Model = "cutlas supreme";
@@ -20,6 +21,7 @@ namespace WorkingWithCollections
             b1.Author = "Robert Tabor";
             b1.Title = "Microsoft .!net XML Web Services";
             b1.ISBN = "0-000-00000-0";
+            */
             /*
                         // ArrayLists are dynamically sized,
                         // cool features sorting,remove items
@@ -44,13 +46,28 @@ namespace WorkingWithCollections
                 Console.WriteLine(car.Model);
             }
             */
-
+            /*
             // Dictionary<TKey, TValue>
             Dictionary<string, Car> myDictionary = new Dictionary<string, Car>();
             myDictionary.Add(car1.VIN, car1);
             myDictionary.Add(car2.VIN, car2);
             Console.WriteLine(myDictionary["B2"].Make);
 
+            */
+
+            //string[] names = { "Bob", "Steve", "Brian", "Chuck" };
+
+            // Object initializer
+            //No need for a constractor
+            //  Car car1 = new Car() { Make = "BMW", Model = "750li", VIN = "C3" };
+            //Car car2 = new Car() { Make = "Toyota", Model = "4Runner", VIN = "D4" };
+
+            //Collection initializer
+            List<Car> myList = new List<Car>()
+            {
+                new Car {Make = "Oldmobile", Model = "cutlas suoreme", VIN = "E5"},
+                new Car {Make = "Nissan", Model= "Altima" , VIN = "F6"}
+            };
 
             Console.ReadLine();
 
