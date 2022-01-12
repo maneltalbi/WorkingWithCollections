@@ -18,18 +18,31 @@ namespace WorkingWithCollections
             b1.Author = "Robert Tabor";
             b1.Title = "Microsoft .!net XML Web Services";
             b1.ISBN = "0-000-00000-0";
+            /*
+                        // ArrayLists are dynamically sized,
+                        // cool features sorting,remove items
+                        ArrayList myArrayList = new ArrayList();
+                        myArrayList.Add(car1);
+                        myArrayList.Add(car2);
+                        myArrayList.Add(b1);
+                        myArrayList.Remove(b1);
+                        foreach (Car car in myArrayList)
+                        {
+                            Console.WriteLine(car.Make);
+                        }
+                        */
 
-            // ArrayLists are dynamically sized,
-            // cool features sorting,remove items
-            ArrayList myArrayList = new ArrayList();
-            myArrayList.Add(car1);
-            myArrayList.Add(car2);
-            myArrayList.Add(b1);
-            myArrayList.Remove(b1);
-            foreach (Car car in myArrayList)
+            // List <T>
+            List<Car> myList = new List<Car>();
+            myList.Add(car1);
+            myList.Add(car2);
+            //myList.Add(b1);
+            foreach (Car car in myList)
             {
-                Console.WriteLine(car.Make);
+                Console.WriteLine(car.Model);
             }
+
+
             Console.ReadLine();
 
         }
